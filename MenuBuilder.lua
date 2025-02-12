@@ -8,5 +8,10 @@ function ContactMenu()
         CS.UnityEngine.Application.OpenURL("https://www.facebook.com/hairmodnro/")
     end)
     myVector:addElement(fbCommand)
+    local ytbCommand = CS.Command("Youtube", function()
+        CS.UnityEngine.Application.OpenURL("https://www.youtube.com/@HairMod")
+        end
+        )
+    myVector:addElement(ytbCommand)
     CS.GameCanvas.menu:startAt(myVector, 0)
 end
