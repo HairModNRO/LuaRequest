@@ -1,0 +1,12 @@
+function ContactMenu()
+    local myVector = CS.MyVector()
+    local zaloCommand = CS.Command("Zalo", function()
+        CS.GameCanvas.startOKDlg("Zalo: 0986.106.250")
+    end)
+    myVector:addElement(zaloCommand)
+    local fbCommand = CS.Command("Facebook", function()
+        CS.UnityEngine.Application.OpenURL("https://www.facebook.com/hairmodnro/")
+    end)
+    myVector:addElement(fbCommand)
+    CS.GameCanvas.menu:startAt(myVector, 0)
+end
