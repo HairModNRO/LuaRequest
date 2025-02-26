@@ -16,6 +16,6 @@ function ContactMenu()
     local tiktokCommand = CS.Command("Tiktok", function()
             CS.UnityEngine.Application.OpenURL("https://www.tiktok.com/@haircsharp?_t=ZS-8uFbs2MEhuS&_r=1")
         end)
-    myVector::addElement(tiktokCommand)
+    myVector:addElement(tiktokCommand)
             CS.GameCanvas.menu:startAt(myVector, 0)
 end
